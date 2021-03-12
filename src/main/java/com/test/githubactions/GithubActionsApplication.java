@@ -19,7 +19,7 @@ public class GithubActionsApplication {
     static class TestController {
         @GetMapping
         public String test() {
-            return "Hello git hub";
+            return "Hello git hub action";
         }
     }
 
