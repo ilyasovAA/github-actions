@@ -1,4 +1,5 @@
 FROM openjdk:13-alpine as unpack
+LABEL org.opencontainers.image.source=https://github.com/lyasovAA/github-actions
 ADD target target
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
